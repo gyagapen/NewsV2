@@ -1,0 +1,12 @@
+<ion-view view-title="Test app">
+    <ion-content>
+       <h2>selected {{newsElement.name}}</h2>
+        <div class="list">
+             
+            <a class="item item-avatar" ng-repeat="articleItem in newsElement.subList" href="#/app/article_list/{{newsId}}/{{articleItem.id}}">
+                <img src="img/material3.jpg"/>
+                <h2>{{articleItem.name}}</h2>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

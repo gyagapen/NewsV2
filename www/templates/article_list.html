@@ -1,0 +1,12 @@
+<ion-view view-title="Test app">
+    <ion-content lazy-scroll>
+       <h2>selected {{articleListItem.name}}</h2>
+        <div class="list">
+
+            <a class="item item-avatar" ng-repeat="articleItem in articleList" href="#/app/article_view/{{articleItem.link}}">
+                <img  image-lazy-src="{{articleItem.img}}"/>
+                <h2>{{articleItem.title}}</h2>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

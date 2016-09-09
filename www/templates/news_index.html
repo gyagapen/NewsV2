@@ -1,0 +1,15 @@
+<ion-view view-title="Test app">
+    <ion-content>
+        <div class="list">
+
+            <a class="item item-avatar" ng-repeat="newsItem in newList" href="#/app/submenu_list/{{newsItem.id}}">
+                <img src="img/material3.jpg"/>
+                <h2>{{newsItem.name}}</h2>
+            </a>
+        </div>
+
+        <!--<div class="bar bar-subheader bar-stable static text-center" ng-repeat="newsItem in newList">
+            <strong class="title">{{newsItem.name}}</strong>
+        </div>-->
+    </ion-content>
+</ion-view>
